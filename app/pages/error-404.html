@@ -1,0 +1,51 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Home" %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %} {% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+
+<div class="main-wrapper">
+    <div class="app sidebar-fixed header-fixed" id="app">
+        {% include "partials/header.html" %}
+        <!-- Sidebar goes here  -->
+        {% include "partials/sidebar.html" %}
+        <article class="content error-404-page">
+            <section class="section">
+                <div class="error-card">
+                    <div class="error-title-block">
+                        <h1 class="error-title">404</h1>
+                        <h2 class="error-sub-title"> Sorry, page not found </h2>
+                    </div>
+                    <div class="error-container">
+                        <p>You better try our awesome search:</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="button">Search</button>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <a class="btn btn-primary" href="index.html">
+                            <i class="fa fa-angle-left"></i> Back to Dashboard</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+        {% include "partials/footer.html" %}
+    </div>
+</div>
+
+
+
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %} {% endblock %}

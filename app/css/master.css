@@ -1,0 +1,12 @@
+/*
+     * ----------------------------------------------------------------
+     * CSS Master SASS 
+     * There is SASS Inside, be careful !
+     * Author: Daniel Chikaka
+     * Email: danielmanji@gmail.com
+     * ----------------------------------------------------------------
+ */
+@import url(../css-core/vendor.css);
+@import url(../css-core/app-purple.css);
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJtYXN0ZXIuY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qXG4gICAgICogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuICAgICAqIENTUyBNYXN0ZXIgU0FTUyBcbiAgICAgKiBUaGVyZSBpcyBTQVNTIEluc2lkZSwgYmUgY2FyZWZ1bCAhXG4gICAgICogQXV0aG9yOiBEYW5pZWwgQ2hpa2FrYVxuICAgICAqIEVtYWlsOiBkYW5pZWxtYW5qaUBnbWFpbC5jb21cbiAgICAgKiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gKi9cbkBpbXBvcnQgdXJsKC4uL2Nzcy1jb3JlL3ZlbmRvci5jc3MpO1xuQGltcG9ydCB1cmwoLi4vY3NzLWNvcmUvYXBwLXB1cnBsZS5jc3MpO1xuIl0sImZpbGUiOiJtYXN0ZXIuY3NzIn0= */

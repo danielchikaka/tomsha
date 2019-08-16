@@ -1,0 +1,30 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Home" %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %} {% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+<div class="app blank sidebar-opened">
+    <article class="content">
+        <div class="error-card global">
+            <div class="error-title-block">
+                <h1 class="error-title">500</h1>
+                <h2 class="error-sub-title"> Internal Server Error. </h2>
+            </div>
+            <div class="error-container">
+                <p>Why not try refreshing your page? or you can contact support</p>
+                <a class="btn btn-primary" href="index.html">
+                    <i class="fa fa-angle-left"></i> Back to Dashboard </a>
+            </div>
+        </div>
+    </article>
+</div>
+
+
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %} {% endblock %}

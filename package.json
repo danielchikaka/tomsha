@@ -1,0 +1,41 @@
+{
+    "name": "tomsha",
+    "version": "1.0.0",
+    "description": "A website project for  Tomsha",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "lodash": "^3.10.1",
+        "node-sass": "^4.12.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.11.1",
+        "gulp": "^3.9.0",
+        "gulp-cache": "^0.4.1",
+        "gulp-concat": "^2.6.0",
+        "gulp-cssnano": "^2.1.2",
+        "gulp-dest": "^0.2.3",
+        "gulp-if": "^2.0.0",
+        "gulp-imagemin": "^2.4.0",
+        "gulp-nunjucks-render": "^2.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-uglify": "^1.5.1",
+        "gulp-useref": "^3.0.5",
+        "run-sequence": "^1.1.5"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:danielchikaka/ita.git"
+    },
+    "keywords": [],
+    "author": "Daniel Chikaka",
+    "license": "ISC",
+    "bugs": {
+        "url": "http://github.com:danielchikaka/tomsha/issues"
+    },
+    "homepage": "http://github.com:danielchikaka/tomsha#readme"
+}
