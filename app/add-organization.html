@@ -268,171 +268,83 @@
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
 <div class="sidebar-mobile-menu-handle" id="sidebar-mobile-menu-handle"></div>
 <div class="mobile-menu-handle"></div>
-        <article class="content typography-page">
+        <article class="content item-editor-page">
             <div class="title-block">
-                <h3 class="title"> Typography </h3>
+                <h3 class="title"> Add new Organization
+                    <span class="sparkline bar" data-type="bar"></span>
+                </h3>
             </div>
-            <section class="section">
-                <div class="row sameheight-container">
-                    <div class="col-md-4">
-                        <div class="card sameheight-item">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Headings </h3>
-                                </div>
-                                <section class="section">
-                                    <h1>Heading 1
-                                        <small>Sub-heading</small>
-                                    </h1>
-                                    <h2>Heading 2
-                                        <small>Sub-heading</small>
-                                    </h2>
-                                    <h3>Heading 3
-                                        <small>Sub-heading</small>
-                                    </h3>
-                                    <h4>Heading 4
-                                        <small>Sub-heading</small>
-                                    </h4>
-                                    <h5>Heading 5
-                                        <small>Sub-heading</small>
-                                    </h5>
-                                    <h6>Heading 6
-                                        <small>Sub-heading</small>
-                                    </h6>
-                                </section>
+            <form name="item">
+                <div class="card card-block">
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Name of Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Physical Address of  Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Postal Address of  Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+
+                    <fieldset class="border p-2 mb-4">
+                        <legend style="width: auto; font-size: 16px">Details of TOMSHA focal Person</legend>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Name: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Telephone Number: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Email: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Fax: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Organization's TACAIDS registration code </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-5 form-control-label text-xs-right"> Is Organization member of an umbrella Organization? </label>
+                        <div class="col-sm-7">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="orgMemberUmbrella" id="inlineRadio1" value="YES">
+                                <label class="form-check-label" for="inlineRadio1">YES</label>
                             </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="orgMemberUmbrella" id="inlineRadio2" value="NO">
+                                <label class="form-check-label" for="inlineRadio2">NO</label>
+                            </div>
+                            <div id="orgMemberUmbrella">
+                                <input type="text" class="form-control boxed" placeholder="Name the umbrella organization"> </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card sameheight-item">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Paragraphs </h3>
-                                </div>
-                                <section class="section">
-                                    <p class="lead">This is an example of lead body copy.</p>
-                                    <p>This is an example of standard paragraph text. This is an example of
-                                        <a href="javascript:void(0);">link anchor text</a> within body copy.</p>
-                                    <p>
-                                        <small>This is an example of small, fine print text.</small>
-                                    </p>
-                                    <p>
-                                        <strong>This is an example of strong, bold text.</strong>
-                                    </p>
-                                    <p>
-                                        <em>This is an example of emphasized, italic text.</em>
-                                    </p>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card sameheight-item">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Emphasis Classes </h3>
-                                </div>
-                                <section class="section">
-                                    <p class="text-muted">This is an example of muted text.</p>
-                                    <p class="text-primary">This is an example of primary text.</p>
-                                    <p class="text-success">This is an example of success text.</p>
-                                    <p class="text-info">This is an example of info text.</p>
-                                    <p class="text-warning">This is an example of warning text.</p>
-                                    <p class="text-danger">This is an example of danger text.</p>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section">
-                <div class="row sameheight-container">
-                    <div class="col-md-4">
-                        <div class="card sameheight-item">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Abbreviations </h3>
-                                </div>
-                                <section class="section">
-                                    <p>The abbreviation of the word attribute is
-                                        <abbr title="attribute">attr</abbr>.</p>
-                                    <p>
-                                        <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>is an abbreviation for a programming language.</p>
-                                    <br>
-                                    <h4>Addresses</h4>
-                                    <address>
-                                                <strong>Twitter, Inc.</strong>
-                                                <br>795 Folsom Ave, Suite 600
-                                                <br>San Francisco, CA 94107
-                                                <br>
-                                                <abbr title="Phone">P:</abbr>(123) 456-7890</address>
-                                    <address>
-                                                <strong>Full Name</strong>
-                                                <br>
-                                                <a href="mailto:#">first.last@example.com</a>
-                                            </address>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card sameheight-item">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Blockquotes </h3>
-                                </div>
-                                <section class="section">
-                                    <h4>Default Blockquote</h4>
-                                    <blockquote>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </blockquote>
-                                    <h4>Blockquote with Citation</h4>
-                                    <blockquote>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <small>Someone famous in
-                                                    <cite title="Source Title">Source Title</cite>
-                                                </small>
-                                    </blockquote>
-                                    <h4>Right Aligned Blockquote</h4>
-                                    <blockquote class="pull-right">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </blockquote>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card sameheight-item">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Lists </h3>
-                                </div>
-                                <section class="section">
-                                    <h4>Unordered List</h4>
-                                    <ul>
-                                        <li>List Item</li>
-                                        <li>List Item</li>
-                                        <li>
-                                            <ul>
-                                                <li>List Item</li>
-                                                <li>List Item</li>
-                                                <li>List Item</li>
-                                            </ul>
-                                        </li>
-                                        <li>List Item</li>
-                                    </ul>
-                                    <h4>Ordered List</h4>
-                                    <ol>
-                                        <li>List Item</li>
-                                        <li>List Item</li>
-                                        <li>List Item</li>
-                                    </ol>
-                                </section>
-                            </div>
+
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button type="submit" class="btn btn-primary"> Submit </button>
                         </div>
                     </div>
                 </div>
-            </section>
+            </form>
         </article>
         <footer class="footer">
     <div class="footer-block buttons">
@@ -468,7 +380,27 @@
     <!-- endbuild -->
 
     <!--PAGES JS-->
-     
+    
+
+<script>
+    $(document).ready(function() {
+        var conditionalContent = $('#orgMemberUmbrella'),
+            // caching a reference to the group of inputs, since we're using that
+            // same group twice:
+            group = $('input[type=radio][name="orgMemberUmbrella"]');
+
+        // binding the change event-handler:
+        group.change(function() {
+            // toggling the visibility of the conditionalContent, which will
+            // be shown if the assessment returns true and hidden otherwise:
+            conditionalContent.toggle(group.filter(':checked').val() === 'YES');
+            // triggering the change event on the group, to appropriately show/hide
+            // the conditionalContent on page-load/DOM-ready:
+        }).change();
+    })
+</script>
+
+
     <!--END PAGES JS-->
 
     <!--build:js js/app.min.js -->
