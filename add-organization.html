@@ -269,93 +269,128 @@
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
 <div class="sidebar-mobile-menu-handle" id="sidebar-mobile-menu-handle"></div>
 <div class="mobile-menu-handle"></div>
-        <article class="content charts-flot-page">
+        <article class="content item-editor-page">
             <div class="title-block">
-                <h3 class="title"> Charts Flot </h3>
-                <p class="title-description"> List of sample charts with custom colors </p>
+                <h3 class="title"> Add new Organization
+                    <span class="sparkline bar" data-type="bar"></span>
+                </h3>
             </div>
-            <section class="section">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Bar Chart Example </h3>
-                                </div>
-                                <section class="example">
-                                    <div class="flot-chart">
-                                        <div class="flot-chart-content" id="flot-bar-chart"></div>
-                                    </div>
-                                </section>
+            <form name="item">
+                <div class="card card-block">
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Name of Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Physical Address of  Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Postal Address of  Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+
+                    <fieldset class="border p-2 mb-4">
+                        <legend style="width: auto; font-size: 16px">Details of TOMSHA focal Person</legend>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Name: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Telephone Number: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Email: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Fax: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Organization's TACAIDS registration code </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-5 form-control-label text-xs-right"> Is Organization member of an umbrella Organization? </label>
+                        <div class="col-sm-7">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="orgMemberUmbrella" id="inlineRadio1" value="YES">
+                                <label class="form-check-label" for="inlineRadio1">YES</label>
                             </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="orgMemberUmbrella" id="inlineRadio2" value="NO">
+                                <label class="form-check-label" for="inlineRadio2">NO</label>
+                            </div>
+                            <div id="orgMemberUmbrella">
+                                <input type="text" class="form-control boxed" placeholder="Name the umbrella organization"> </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Line Cahrt Example </h3>
-                                </div>
-                                <section class="example">
-                                    <div class="flot-chart">
-                                        <div class="flot-chart-content" id="flot-line-chart"></div>
-                                    </div>
-                                </section>
-                            </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right">Year Organization started operating </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <fieldset class="border p-2 mb-4">
+                        <legend style="width: auto; font-size: 16px">Number of Organization Staff</legend>
+
+                        <h6>Females</h6>
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label text-xs-right"> Fulltime: </label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+
+                            <label class="col-sm-2 form-control-label text-xs-right"> Part-time: </label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+
+                            <label class="col-sm-2 form-control-label text-xs-right"> Volunteer: </label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <h6>Males</h6>
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label text-xs-right"> Fulltime: </label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+
+                            <label class="col-sm-2 form-control-label text-xs-right"> Part-time: </label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+
+                            <label class="col-sm-2 form-control-label text-xs-right"> Volunteer: </label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Name of Council which organization submits this TOMSHA form to </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button type="submit" class="btn btn-primary"> Submit </button>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="section">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Pie Chart Example </h3>
-                                </div>
-                                <section class="example">
-                                    <div class="flot-chart">
-                                        <div class="flot-chart-pie-content" id="flot-pie-chart"></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Live Chart Example </h3>
-                                </div>
-                                <section class="example">
-                                    <div class="flot-chart">
-                                        <div class="flot-chart-content" id="flot-line-chart-moving"></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-block">
-                                <div class="card-title-block">
-                                    <h3 class="title"> Multiple Axes Line Chart Example </h3>
-                                </div>
-                                <section class="example">
-                                    <div class="flot-chart">
-                                        <div class="flot-chart-content" id="flot-line-chart-multi"></div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </form>
         </article>
         <footer class="footer">
     <div class="footer-block buttons">
@@ -389,7 +424,27 @@
     <script src="js/vendor.min.js"></script>
 
     <!--PAGES JS-->
-     
+    
+
+<script>
+    $(document).ready(function() {
+        var conditionalContent = $('#orgMemberUmbrella'),
+            // caching a reference to the group of inputs, since we're using that
+            // same group twice:
+            group = $('input[type=radio][name="orgMemberUmbrella"]');
+
+        // binding the change event-handler:
+        group.change(function() {
+            // toggling the visibility of the conditionalContent, which will
+            // be shown if the assessment returns true and hidden otherwise:
+            conditionalContent.toggle(group.filter(':checked').val() === 'YES');
+            // triggering the change event on the group, to appropriately show/hide
+            // the conditionalContent on page-load/DOM-ready:
+        }).change();
+    })
+</script>
+
+
     <!--END PAGES JS-->
 
     <script src="js/app.min.js"></script>
