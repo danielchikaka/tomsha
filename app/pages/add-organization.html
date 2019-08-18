@@ -1,0 +1,129 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Home" %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %}
+<style>
+    #orgMemberUmbrella {
+        display: none;
+    }
+</style>
+{% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+
+<div class="main-wrapper">
+    <div class="app sidebar-fixed header-fixed" id="app">
+        {% include "partials/header.html" %}
+        <!-- Sidebar goes here  -->
+        {% include "partials/sidebar.html" %}
+        <article class="content item-editor-page">
+            <div class="title-block">
+                <h3 class="title"> Add new Organization
+                    <span class="sparkline bar" data-type="bar"></span>
+                </h3>
+            </div>
+            <form name="item">
+                <div class="card card-block">
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Name of Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Physical Address of  Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Postal Address of  Organization: </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+
+                    <fieldset class="border p-2 mb-4">
+                        <legend style="width: auto; font-size: 16px">Details of TOMSHA focal Person</legend>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Name: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Telephone Number: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Email: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 form-control-label text-xs-right"> Fax: </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control boxed" placeholder=""> </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label text-xs-right"> Organization's TACAIDS registration code </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control boxed" placeholder=""> </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-5 form-control-label text-xs-right"> Is Organization member of an umbrella Organization? </label>
+                        <div class="col-sm-7">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="orgMemberUmbrella" id="inlineRadio1" value="YES">
+                                <label class="form-check-label" for="inlineRadio1">YES</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="orgMemberUmbrella" id="inlineRadio2" value="NO">
+                                <label class="form-check-label" for="inlineRadio2">NO</label>
+                            </div>
+                            <div id="orgMemberUmbrella">
+                                <input type="text" class="form-control boxed" placeholder="Name the umbrella organization"> </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button type="submit" class="btn btn-primary"> Submit </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </article>
+        {% include "partials/footer.html" %}
+    </div>
+</div>
+
+
+
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %}
+
+<script>
+    $(document).ready(function() {
+        var conditionalContent = $('#orgMemberUmbrella'),
+            // caching a reference to the group of inputs, since we're using that
+            // same group twice:
+            group = $('input[type=radio][name="orgMemberUmbrella"]');
+
+        // binding the change event-handler:
+        group.change(function() {
+            // toggling the visibility of the conditionalContent, which will
+            // be shown if the assessment returns true and hidden otherwise:
+            conditionalContent.toggle(group.filter(':checked').val() === 'YES');
+            // triggering the change event on the group, to appropriately show/hide
+            // the conditionalContent on page-load/DOM-ready:
+        }).change();
+    })
+</script>
+
+{% endblock %}
