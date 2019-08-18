@@ -1,0 +1,77 @@
+{% extends "layout.html" %} {# Start of title #} {% set pageName = "Home" %} {# End of title #} {% block TITLE_META %}
+<title> {{ pageName }} | {{ siteName }} </title>
+<meta name="description" content="some page description here">
+<meta name="keywords" content="page keywords here">
+<link rel="author" name="{{ author }}" />
+<link rel="canonical" href="pageUrl" /> {% endblock %}
+<!--/END title and meta section-->
+<!--START PAGE CSS-->
+{% block CSS %}
+<style>
+    #orgMemberUmbrella {
+        display: none;
+    }
+</style>
+{% endblock %}
+<!--/END PAGE CSS-->
+{% block content %}
+
+<div class="main-wrapper">
+    <div class="app sidebar-fixed header-fixed" id="app">
+        {% include "partials/header.html" %}
+        <!-- Sidebar goes here  -->
+        {% include "partials/sidebar.html" %}
+        <article class="content item-editor-page">
+            <div class="title-block">
+                <h3 class="title"> Organization Name
+                    <span class="sparkline bar" data-type="bar"></span>
+                </h3>
+            </div>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td>Name of Organization</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>Organization's Location</td>
+                        <td>London</td>
+                    </tr>
+                    <tr>
+                        <td>Organization Address</td>
+                        <td>Box 789, Shinyanga</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </article>
+        {% include "partials/footer.html" %}
+    </div>
+</div>
+
+
+
+{% endblock %}
+<!--here comes the JS specific for home page-->{% block JS %}
+
+<script>
+    $(document).ready(function() {
+        var conditionalContent = $('#orgMemberUmbrella'),
+            // caching a reference to the group of inputs, since we're using that
+            // same group twice:
+            group = $('input[type=radio][name="orgMemberUmbrella"]');
+
+        // binding the change event-handler:
+        group.change(function() {
+            // toggling the visibility of the conditionalContent, which will
+            // be shown if the assessment returns true and hidden otherwise:
+            conditionalContent.toggle(group.filter(':checked').val() === 'YES');
+            // triggering the change event on the group, to appropriately show/hide
+            // the conditionalContent on page-load/DOM-ready:
+        }).change();
+    })
+</script>
+
+{% endblock %}
