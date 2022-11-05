@@ -9,7 +9,7 @@
     },
     "devDependencies": {
         "browser-sync": "^2.11.1",
-        "gulp": "^3.9.0",
+        "gulp": "^4.0.2",
         "gulp-cache": "^0.4.1",
         "gulp-concat": "^2.6.0",
         "gulp-cssnano": "^2.1.2",
