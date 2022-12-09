@@ -8,7 +8,7 @@
         "node-sass": "^4.12.0"
     },
     "devDependencies": {
-        "browser-sync": "^2.11.1",
+        "browser-sync": "^2.26.7",
         "gulp": "^3.9.0",
         "gulp-cache": "^0.4.1",
         "gulp-concat": "^2.6.0",
